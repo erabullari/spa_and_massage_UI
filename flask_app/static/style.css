@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+  background-color: white;
+  padding: 1.4rem;
+  opacity: 87%;
+}
+.logo{
+    width: 7.5rem;
+    margin-left: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+    width: 100%;
+    padding:1.1rem ;
+    color: #492143;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+ .link{
+   text-decoration: none;
+    color: #492143;
+
+}
+   
+.vaii{
+    width: 100%;
+    padding: 3px;
+}
+
+.imazhi{
+    width: 100% ;
+    height:50rem;
+    
+}
+.section2{
+    padding: 12px 35px;
+    background-color: rgb(239, 230, 232);
+    font-size: 10px;
+}
+.section2 h1{
+ width: 100%;
+ text-align: center;
+ color: #492143;
+ margin-top: 10px;
+}
+
+.firstp{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.firstp img{
+    border-radius: 100%;
+    height: 19rem;
+    width: 23rem;
+}
+
+.firstp p{
+    font-family:'Times New Roman', Times, serif;
+    font-size:1rem;
+    
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.seconddiv{
+    padding:0px 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.seconddiv h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 25px;
+    color: #492143;
+}
+.services div{
+    width: 20%;
+     
+}
+.services h4{
+    margin:1rem 0;
+    font-weight: bold;
+    color: #442d41;
+}
+.services p{
+color: #634b63;
+}
+
+.thirddiv div{
+    width: 19%; 
+}
+
+.thirddiv{
+margin: 2rem 0; 
+}
+
+.titleservice{
+    color: #492143;
+}
+
+.cmimet{
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.cmimet h4{
+    font-size: 1.1rem;
+}
+.cmimet h3{
+    font-size: 1.4rem;
+}
+
+
+.cmimet div{
+width: 30%;
+}
+
+.forthsection {
+    padding-top: 1rem 0;
+    background-color:  rgb(239, 230, 232); 
+   
+}
+
+.forthsection h1{
+    padding: 1.5rem;
+    text-align: center;
+    color: #492143;
+    font-weight: bold;
+    font-size: 26px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.orderserction div  img{
+    height:  60%;
+    width: 55%;
+    margin: 5px 22%;
+    margin-bottom: 1.3rem;
+}
+
+.orderserction button{
+   margin: 2% 45%;
+
+    background: #634b63;
+    background-image: -webkit-linear-gradient(top, #634b63, #030303);
+    background-image: -moz-linear-gradient(top, #634b63, #030303);
+    background-image: -ms-linear-gradient(top, #634b63, #030303);
+    background-image: -o-linear-gradient(top, #634b63, #030303);
+    background-image: linear-gradient(to bottom, #634b63, #030303);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px ;
+    text-decoration: none;
+  }
+  
+
+  .orderserction button:hover {
+    background: #ce96e0;
+    background-image: -webkit-linear-gradient(top, #ce96e0, #52304d);
+    background-image: -moz-linear-gradient(top, #ce96e0, #52304d);
+    background-image: -ms-linear-gradient(top, #ce96e0, #52304d);
+    background-image: -o-linear-gradient(top, #ce96e0, #52304d);
+    background-image: linear-gradient(to bottom, #ce96e0, #52304d);
+    text-decoration: none;
+  }
+
+  footer{
+    background-color: #1c0818;
+    height: 16rem;
+    padding: 30px;
+    color: rgb(140, 136, 136); 
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+.locdetail{
+    margin: 2px 20%;
+    text-align: center;
+    
+}
+.locdetail h6,h5{
+    padding-top: 5px;
+}
+
+
+
+.selected{
+    width: 60rem;
+}
+
+
+#form-registration{
+    width: 40%;
+    margin: 5% 30%;
+    padding: 20px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 15px ;
+    
+}
+.register-body{
+    background-image: url('../static/img/spa-background-ze9741t4t5mq8xrj.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  
+}
+.personalinformation{
+    background-color: aliceblue;
+  width: 40%;
+  height: 50%;
+  padding: 30px;
+  margin:10% 30%;
+  border-radius: 10px ;
+}

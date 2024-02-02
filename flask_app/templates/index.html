@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+ 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <nav  class="navbar navbar-expand-lg fixed-top  navbar-light bg-light " >
+        <div> <img src="./static/img/logo.jpg" alt="" class="logo" ></div>
+        <div class=" justify-content-between vaii">
+            <ul class="d-flex ">
+                <li ><a href="#home" class="link">Home</a></li>
+                <li><a href="#aboutus" class="link">About Us</a></li>
+                <li> <a href="#services" class="link">Services </a></li>
+               <li><a href="#location" class="link"> Location </a></li>
+               <li><a href='/register' class="link"> Book Now </a></li>
+               
+            </ul>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators" >
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" id="home">
+            <div class="carousel-item active">
+                <img src="./static/img/shutterstock_11168971281.jpg" class="d-block imazhi" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./static/img/Lake-George-Spa.jpg" class="d-block imazhi" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./static/img/bigstock-Spa-Accessories-99070442.webp" class="d-block imazhi" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="section2" id="aboutus">
+        <h1>About Us</h1>
+        <div class="firstp">
+            <img src="./static/img/massagep.jpg" alt="">
+            <p>
+                Përshëndetje dhe mirësevini në Qendrën e Masazhesh dhe Spa!
+                Ne jemi një destinacion i dedikuar për relaksim, rimëkëmbje dhe kujdes për trupin dhe shpirtin tuaj.
+                Me një ekip të specializuar të terapistëve të masazhit dhe profesionistëve të spa-s, ne kemi një qëllim
+                të thjeshtë
+                - të sigurojmë një përvojë të jashtëzakonshme për të gjithë klientët tanë.
+
+                Çfarë na dallon nga të tjerët është përkushtimi ynë ndaj cilitetit dhe k
+                ujdesit të klientit. Çdo vizitë në qendrën tonë është një udhëtim i personalizuar, ku çdo detaj është
+                planifikuar
+                për të siguruar një ambient qetësues dhe një përvojë më të mirënjohur të masazhit dhe trajtimeve spa.
+            </p>
+        </div>
+        <div class="firstp">
+
+            <p>Misioni ynë është të ofrojmë një shërbim të jashtëzakonshëm, duke përdorur teknika të avancuara të
+                masazhit dhe produkte të cilësisë së lartë. Ne synojmë të rikthejmë energjinë dhe vitalitetin tuaj, duke
+                sjellë një ndjenjë të thellë relaksi dhe qetësie.
+
+                Në qendrën tonë, jemi të përkushtuar ndaj shëndetit dhe mirëqenies suaj.
+                Kemi krijuar një ambient të bukur dhe të përshtatshëm, ku mund të shijoni një gamë
+                të gjerë të trajtimeve dhe terapive. Nga masazhet terapeutike deri te trajtimet e fytyrës dhe
+                thjeshtë relaksimi në saunën tonë, ofrojmë zgjedhje të shumta për të plotësuar nevojat e çdo individit.
+            </p>
+            <img src="./static/img/50.jpg " alt="">
+        </div>
+
+
+    </div>
+    <div class="seconddiv" id="services">
+        <h1>Sherbimet tona</h1>
+        <div class="services d-flex justify-content-between">
+
+            <div>
+                <h4 id="text1" onclick="showmoretext(this)">Masazhe Terapeutike</h4>
+                <p>•Masazh Relaksues</p>
+                <p>•Masazh Terapeutik për muskujt tensionuar</p>
+                <p>•Masazh Sportiv për rikuperim pas aktivitetit fizik</p>
+                <p>•Masazh Gjatësor për përmirësim të fleksibilitetit</p>
+            </div>
+
+            <div>
+                <h4>Trajtime Spa për Trupin</h4>
+                <p>•Piling trupi për pastrim të lëkurës</p>
+                <p>• Mbështjellje me maska hidratuese</p>
+                <p>•Terapi Detoksifikuese për pastrim të organizmit</p>
+            </div>
+
+            <div>
+                <h4>Trajtime të Fytyrës:</h4>
+
+                <p>•Përdorim i produkteve të specializuara për lëkurën </p>
+                <p>•Trajtim hidratues për të përmirësuar elasticitetin e lëkurës</p>
+                <p>•Terapi Anti-aging për zvogëlim të rrudhave </p>
+            </div>
+
+            <div>
+                <h4>Manikyr dhe Pedikyr Spa</h4>
+
+                <p>•Manikyr dhe pedikyr profesional</p>
+                <p>•Trajtime për kujdesin e thonjëve dhe lëkurës së duarve dhe këmbëve</p>
+                <p>•Sauna për relaksim të muskujve dhe pastrim të toksinave</p>
+            </div>
+        </div>
+    </div>
+    <div class="thirddiv d-flex justify-content-around ">
+        <div>
+            <img src="./static/img/rs=w_360,h_271,cg_true.webp" alt="" >
+            <div class="d-flex justify-content-between w-100  mt-3 mb-4">
+                <h4 >The Relax Pack</h4>
+                <h3> $135.00</h3>
+            </div>
+            <p>60 minute Relaxation /Swedish Massage Express Facial
+                Hand and Foot Treatment</p>
+        </div>
+        <div>
+            <img src="./static/img/rs=w_360,h_271,cg_true (1).webp" alt="">
+            <div class="d-flex justify-content-between w-100  mt-3 mb-4">
+                <h4>The Indulgence </h4>
+                <h3> $155.00</h3>
+            </div>
+            <p>60 Minute Relaxation / Swedish Massag European Facial Hand and Foot Treatment</p>
+
+        </div>
+        <div>
+            <img src="./static/img/rs=w_360,h_271,cg_true (2).webp" alt="">
+            <div class="d-flex justify-content-between w-100 mt-3 mb-4">
+                <h4>The Lavish </h4>
+                <h3> $230.00</h3>
+            </div>
+            <p>90 Minute Relaxation/Swedish Massag Collagen Facial Apricot hand and foot treatment with parrafin</p>
+        </div>
+    </div>
+
+    <div class="forthsection" >
+        <h1> Lista e Cmimeve </h1>
+        <div class="d-flex cmimet">
+            <div>
+                <div class="w-100 mt-4 ">
+                    <h3 class="titleservice"> Relaction/Swedish Massage - Our Most Popular </h3>
+                    <p>Përdor vajra masazhi për të lehtësuar goditjet e lëmuara dhe rrëshqitëse në të gjithë trupin</p>
+                    <h4>30 Minuta - $45.00</h4>
+                    <h4> Minuta - $70.00</h4>
+                    <h4> 90 Minuta- $110.00</h4>
+                </div>
+                <div class="w-100 mt-4 ">
+                    <h3 class="titleservice">Deep Tissue/Therapeutic Massage </h3>
+                    <p>Lehtësoni tensionin dhe dhimbjet me masazhin tonë të indeve të thella. Masazhoterapistët tanë të
+                        aftë përdorin
+                        presion i fortë për të synuar muskuj të veçantë dhe për t'ju lënë të ndiheni të rinovuar.</p>
+                    <h4>30 Minuta - $60.00</h4>
+                    <h4>60 Minuta - $90.00</h4>
+                    <h4>90 Minuta - $135.00</h4>
+                </div>
+                <div class="w-100 mt-4">
+                    <h3 class="titleservice">CBD Massage </h3>
+                    <p>Sesion masazhi me vaj ose locion CBD për lehtësim të plotë të dhimbjes. *12,000 mg Hemp Emu
+                        Përmirësim 10,00 dollarë </p>
+                    <h4>60 Minuta - $95.00</h4>
+                    <h4>90 Minuta - $135.00</h4>
+                </div>
+
+            </div>
+            <div>
+
+                <div class="w-100 mt-4">
+                    <h3 class="titleservice">Prental Massage </h3>
+                    <p>Terapia e përshtatur posaçërisht për nevojat e nënave në pritje. Quhet edhe masazh para lindjes
+                    </p>
+                    <h4>60 Minute - $88.00</h4>
+                    <h4>90 Minute - $120.00 </h4>
+                    <p>Në dispozicion të mërkurën-e shtunë ora 12:00. - 5:00 pasdite.</p>
+                </div>
+
+                <div class="w-100 ">
+                    <div class="w-100 mt-4 ">
+                        <h3 class="titleservice">Hot Stone Massage </h3>
+                        <p>Një trajtim i ngrohtë relaksues duke përdorur gurë të nxehtë për të fshirë tensionin. </p>
+                        <h4>60 Minuta - $95.00</h4>
+                        <h4>90 Minuta - $135.00</h4>
+                    </div>
+                    <div class="w-100 mt-4 ">
+                        <h3 class="titleservice">Couple Massage - Relaction</h3>
+                        <p> Masazh për çifte që përbëhet nga një masazh i lehtë, i butë dhe relaksues.</p>
+                        <h4>60 Minute - $140.00</h4>
+                        <h4>90 Minute - $220.00</h4>
+                    </div>
+                    <div class="w-100 mt-4 ">
+                        <h3 class="titleservice">Coples Masage- Deep Tisciue / Therapistic</h3>
+                        <p> Masazh relaksues për çifte i përbërë nga presion i thellë i fokusuar në zona të caktuara për
+                            çlirimin e tensionit. </p>
+                        <h4>60 Minuta - $180.00</h4>
+                        <h4>90 Minuta - $220.00</h4>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="orderserction" id="order">
+            <div > <img src="./static/img/logo.jpg" alt="" ></div>
+           <a href='/register'> <button>Rezervo tani! </button></a>
+        </div>
+
+      
+
+    <footer class="d-flex" id="location">
+        <div class="locdetail">
+            <h3>Our Location</h3>
+            <h6>Addres: Tirane , Don Bosko</h6>
+            <h6>Nr telefonit : <a href="tel:+05890000111"> 0-589-0000111</a></h6>
+            <h5>Te hapur:</h5>
+            <h6> Hene - Shtune</h6>
+            <h6> 9:00 - 21:00</h6>
+        </div>
+    
+        <div >
+            <h6>Copyright © 2023 The Massage Spa - All Rights Reserved.</h6>
+            <h6>Era Bullari</h6>
+            <h6> User Interface</h6>
+            <h6> Computer Science III</h6>
+            <h6> Universiteti Beder</h6>
+        </div>
+    </footer>       
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+ </script>
+</body>
+
+
+</html>
